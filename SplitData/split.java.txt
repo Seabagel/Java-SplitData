@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args)  {
+      String line = "TS062718001-062918-200-12442 dt";
+      String arrNum = line.split("-")[0];
+      String arrDate = line.split("-")[1];
+      String arrClient = line.split("-")[2];
+      String arrMatter = line.split("-")[3].replace(" dt", "");
+      String arrType = line.split(" ")[1];
+        System.out.println(arrNum);
+        System.out.println(arrDate);
+        System.out.println(arrClient);
+        System.out.println(arrMatter);
+        System.out.println(arrType);
+
+    }
+}
